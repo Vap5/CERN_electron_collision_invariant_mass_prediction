@@ -33,7 +33,7 @@ class EnhancedLSTMModel(nn.Module):
 
 # Instantiate and train the model
 model = EnhancedLSTMModel(input_size=16, hidden_size=128, num_layers=1) 
-model.load_state_dict(torch.load(r'C:\CERN project\lstm_model.pth'))
+model.load_state_dict(torch.load(r'lstm_model.pth'))
 model.eval()
 
 # Function to predict with the model
